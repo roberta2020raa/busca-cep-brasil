@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="pt-Br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="scripts.js" defer></script>
+    <title>BuscaCep</title>
+  </head>
+  <body>
+    <header>
+      <div class="cabecalho">
+        <div>
+          <i class="fa-solid fa-location-dot"></i>
+          <span>BuscaCEP</span>
+        </div>
+        <span>Brasil</span>
+      </div>
+    </header>
+    <main>
+      <div class="principal">
+        <div class="principal2">
+          <h1>Encontre seu endereço:</h1>
+          <span>Consulte CEPs e endereços de todo o Brasil</span>
+        </div>
+
+        <div class="abas">
+          <button type="button" class="ativo">Busca por CEP</button>
+          <button type="button">Busca por Endereço</button>
+        </div>
+
+        <section class="sectionCep">
+          <form>
+            <div class="buscaPorCep">
+              <label for="cep">Digite o CEP</label>
+              <input
+                id="cep"
+                class="cep"
+                type="text"
+                inputmode="numeric"
+                placeholder="00000-000"
+              />
+            </div>
+            <button class="btnCep" type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              Consultar Endereço
+            </button>
+          </form>
+          <div class="result">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Resultado da Consulta</p>
+          </div>
+          <div class="description">
+            <div class="resultCep">
+              <p>CEP</p>
+              <span>06273-030</span>
+            </div>
+            <div class="logradouro">
+              <p>Logradouro</p>
+              <span>Rua:Julio Dantas 206</span>
+            </div>
+            <div class="bairro">
+              <p>Bairro</p>
+              <span>Jd.Mutinga</span>
+            </div>
+            <div class="cidade">
+              <p>Cidade/UF</p>
+              <span>Osasco</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="sectionEndereco">
+          <form>
+            <div class="buscaPorEndereco">
+              <label for="estado">Estado (UF)</label>
+              <input
+                id="estado"
+                class="estado"
+                type="text"
+                placeholder="EX:SP"
+              />
+
+              <label for="cidade">Cidade</label>
+              <input
+                id="cidade"
+                class="cidade"
+                type="text"
+                placeholder="EX:Guarulhos"
+              />
+
+              <label for="rua">Rua</label>
+              <input
+                id="rua"
+                class="rua"
+                type="text"
+                placeholder="EX:Av.Paulista"
+              />
+            </div>
+            <button class="btnCep" type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              Buscar CEPs
+            </button>
+          </form>
+          <div class="description">
+            <div class="result2">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>Resultado da Consulta</p>
+            </div>
+            <div class="description">
+              <div class="resultCep">
+                <p>CEP</p>
+                <span>07263-030</span>
+              </div>
+              <div class="logradouro">
+                <p>Logradouro</p>
+                <span>Rua:Julio Dantas 206</span>
+              </div>
+              <div class="bairro">
+                <p>Bairro</p>
+                <span>JD.Mutinga</span>
+              </div>
+              <div class="cidade">
+                <p>Cidade/UF</p>
+                <span>Osasco/SP</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
