@@ -17,7 +17,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <script src="scripts.js" defer></script>
+    <script type="module" src="./scripts.js"></script>
     <title>BuscaCep</title>
   </head>
   <body>
@@ -35,6 +35,7 @@
         <div class="principal2">
           <h1>Encontre seu endereço:</h1>
           <span>Consulte CEPs e endereços de todo o Brasil</span>
+          
         </div>
 
         <div class="abas">
@@ -53,8 +54,13 @@
                 inputmode="numeric"
                 placeholder="00000-000"
               />
+              <span class="erroCep">
+                <i class="fa-regular fa-circle-xmark"></i>
+                <span class="erroSenha"></span>
+              </span>
+
             </div>
-            <button class="btnCep" type="submit">
+            <button id ="btnCep" class="btnCep" type="submit">
               <i class="fa-solid fa-magnifying-glass"></i>
               Consultar Endereço
             </button>
@@ -66,19 +72,19 @@
           <div class="description">
             <div class="resultCep">
               <p>CEP</p>
-              <span>06273-030</span>
+              <span></span>
             </div>
             <div class="logradouro">
               <p>Logradouro</p>
-              <span>Rua:Julio Dantas 206</span>
+              <span></span>
             </div>
             <div class="bairro">
               <p>Bairro</p>
-              <span>Jd.Mutinga</span>
+              <span></span>
             </div>
             <div class="cidade">
               <p>Cidade/UF</p>
-              <span>Osasco</span>
+              <span></span>
             </div>
           </div>
         </section>

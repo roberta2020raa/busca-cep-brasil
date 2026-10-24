@@ -1,3 +1,5 @@
+import "./buscaCep.js";
+
 const botoesAbas = document.querySelectorAll(".abas button");
 const sectionCep = document.querySelector(".sectionCep");
 const sectionEndereco = document.querySelector(".sectionEndereco");
@@ -14,7 +16,7 @@ botoesAbas.forEach((botao) => {
             item.classList.remove("ativo");
          })
 
-    botao.classList.add("ativo");
+    botao.classList.add("ativo"); 
 
     if( botao.textContent ==="Busca por Endereço"){
 
@@ -25,13 +27,7 @@ botoesAbas.forEach((botao) => {
         sectionEndereco.style.display="none";
 
     }
-
-   
-
-   })
+    })
       
-
-  
-   
 })
 
