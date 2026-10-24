@@ -90,6 +90,16 @@ main{
 .abas button:not(.ativo):hover{
     background-color: #e5e7eb;
 }
+.erroCep{
+    
+    display: none;
+    align-items: center;
+    color:red;
+    gap:5px;
+   font-size:small ;
+    
+
+}
 
 .sectionCep{
     background-color: #FAF9FF;
