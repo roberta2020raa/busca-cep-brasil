@@ -1,4 +1,4 @@
-
+import "./buscaEndereco.js";
 const erroCep = document.querySelector(".erroCep");
 const mensagemErro = document.querySelector(".erroSenha");
 const btnCep = document.querySelector("#btnCep");
@@ -10,7 +10,7 @@ const cidadeUf = document.querySelector(".cidade span");
 
 btnCep.addEventListener('click',(event)=>{
     event.preventDefault();
-    const cepLimpo = numeroCep.value.replace("-","");
+    const cepLimpo = numeroCep.value.trim().replace("-","");
      if (cepLimpo === ""){
 
         erroCep.style.display = "flex";
