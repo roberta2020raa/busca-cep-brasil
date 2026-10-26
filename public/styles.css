@@ -90,7 +90,10 @@ main{
 .abas button:not(.ativo):hover{
     background-color: #e5e7eb;
 }
-.erroCep{
+.erroCep,
+.erroEnd,
+.erroCidade,
+.erroRua {
     
     display: none;
     align-items: center;

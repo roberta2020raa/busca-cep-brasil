@@ -100,6 +100,11 @@
                 placeholder="Ex:SP"
               />
 
+              <span class="erroEnd">
+                <i class="fa-regular fa-circle-xmark"></i>
+                <span class="erroEndMensg"></span>
+              </span>
+
               <label for="cidade">Cidade</label>
               <input
                 id="cidade"
@@ -107,6 +112,10 @@
                 type="text"
                 placeholder="Ex:Guarulhos"
               />
+              <span class="erroCidade">
+                <i class="fa-regular fa-circle-xmark"></i>
+                <span class="erroCidMensg"></span>
+              </span>
 
               <label for="rua">Rua</label>
               <input
@@ -115,8 +124,12 @@
                 type="text"
                 placeholder="Ex:Av.Paulista"
               />
+              <span class="erroRua">
+                <i class="fa-regular fa-circle-xmark"></i>
+                <span class="erroRuaMensg">1</span>
+              </span>
             </div>
-            <button class="btnCep" type="submit">
+            <button id ="btnEnd" class="btnCep" type="submit">
               <i class="fa-solid fa-magnifying-glass"></i>
               Buscar CEPs
             </button>
