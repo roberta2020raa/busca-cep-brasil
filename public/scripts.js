@@ -1,5 +1,6 @@
 import "./buscaCep.js";
 
+
 const botoesAbas = document.querySelectorAll(".abas button");
 const sectionCep = document.querySelector(".sectionCep");
 const sectionEndereco = document.querySelector(".sectionEndereco");
